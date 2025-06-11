@@ -70,7 +70,7 @@ export const CATALOGUE: MCPServer[] = [
         description: 'Direct PostgreSQL database access - run queries, manage schemas, analyze data. Essential for database operations and data analysis.',
         category: 'Database & Data',
         command: "npx",
-        args: ["-y", "@modelcontextprotocol/server-postgres"],
+        args: ["-y", "@modelcontextprotocol/server-postgres", "postgresql://postgres:postgres@localhost:5432/postgres"],
         capabilities: ['sql_queries', 'schema_management', 'data_analysis', 'database_operations'],
         tags: ['database', 'postgres', 'sql', 'data', 'analytics', 'postgresql'],
     },

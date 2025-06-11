@@ -117,6 +117,7 @@ export default function ChatWindow({ serverId, mcpServers, activeChat, currentCh
     setMessages(prev => [...prev, userMessage]);
     setIsLoading(true);
     setError(null);
+    setInput('');
 
     try {
       const response = await fetch(
